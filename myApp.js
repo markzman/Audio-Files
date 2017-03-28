@@ -3,7 +3,7 @@ var scratch = new Tone.Player("scratch1.wav");
 scratch.loop = true;
 scratch.connect(Tone.Master);
 
-var track = new Tone.Player("eddie.mp3");
+var track = new Tone.Player("rumble.mp3");
 track.connect(Tone.Master);
 
 
@@ -52,17 +52,17 @@ var trackSel = function(num2) {
     }
     
     if (num2 == 1) {
-        track.load("eddie.mp3", restart);
+        track.load("rumble.mp3", restart);
     }
     else if (num2 == 2) {
-        track.load("weedo.mp3", restart);
+        track.load("grime.mp3", restart);
     }
     else if (num2 == 3) {
-        track.load("captain.mp3", restart);
+        track.load("halftime.mp3", restart);
     }
     
     else if (num2 == 4) {
-        track.load("meals.mp3", restart);
+        track.load("replicant.mp3", restart);
     }
     else if (num2 == 5) {
         track.load("hip hop.mp3", restart);
@@ -70,8 +70,6 @@ var trackSel = function(num2) {
     
     
 }
-
-
 
 var testFun = function(num) {
     
